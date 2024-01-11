@@ -1,8 +1,7 @@
 ### todo
- - ~~initial data from apis~~
  - cleanup apis
     - check the pagination
-    - get rid of the node apis
+    - fetch all lists in mailchimp
  - make an abstraction around services
  - diff code
  - tests
