@@ -5,7 +5,7 @@ import { PersonResponse } from "./generated/zod-types-manual";
 const c = initContract();
 
 export const contract = c.router({
-  getMembers: {
+  getPersons: {
     method: "GET",
     path: "/persons",
     responses: {
@@ -17,5 +17,6 @@ export const contract = c.router({
       limit: z.number().int().optional(),
     }),
     summary: "get all persons",
+    validateResponseOnClient: true,
   },
 });

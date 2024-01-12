@@ -7,10 +7,8 @@ import { publicRoutes } from "./routes/public";
 
 const app = express();
 
-// attach routes
 app.use("/", publicRoutes);
 
-// start server
 const port = config.PORT;
 app.listen(port, () => {
   return console.log(renderServerMessage(port));
